@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white; /* changed color to white for all buttons */
+}
+
+.btn-primary {
+    background-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.like-btn img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+    filter: invert(100%); /* Ensure icon color matches the text */
+}
+
+.like-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2ecc71;
+    color: white;
+}
+
+.like-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Post Container Styles */
+.post-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.post {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.post h2 {
+    margin-top: 0;
+    color: #34495e;
+    font-size: 1.8rem; /* Increased font size */
+}
+
+.post p {
+    margin: 10px 0;
+    font-size: 1.1rem; /* Slightly larger text */
+    color: #7f8c8d;
+}
+
+.post em {
+    color: #95a5a6;
+    display: block;
+    margin-bottom: 10px; /* Added space between author and content */
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.button-container form {
+    margin: 0;
+}
+
+.button-container .btn {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px 15px; /* Adjusted padding for better appearance */
+}
+
+.button-container .btn + .btn {
+    margin-left: 10px;
+}
+
+/* Form Container Styles */
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.form-container form label {
+    display: block;
+    margin-top: 15px;
+    color: #34495e;
+}
+
+.form-container form input[type="text"],
+.form-container form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-container form input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Post Comment Section */
+.comment-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.comment p {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.comment em {
+    font-size: 0.85rem;
+    color: #95a5a6;
+}
+
+/* Comment Form */
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.comment-form input[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.comment-form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Icon Button Styles */
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon-btn img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.icon-btn:hover {
+    transform: scale(1.2);
+}
+
+.delete-btn img {
+    filter: invert(60%) 
+            sepia(80%) 
+            saturate(500%) 
+            hue-rotate(340deg) 
+            brightness(90%) 
+            contrast(85%);
+}
+
+.update-btn img {
+    filter: invert(50%) 
+            sepia(80%) 
+            saturate(1500%) 
+            hue-rotate(170deg) 
+            brightness(90%) 
+            contrast(85%);
+}

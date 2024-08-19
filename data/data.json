@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "author": "Author Name Varsha",
+        "title": "Post Title Varsha",
+        "content": "New test",
+        "likes": 13,
+        "comments": [
+            {
+                "author": "Current User",
+                "text": "This is a comment"
+            },
+            {
+                "author": "Current User",
+                "text": "Good"
+            },
+            {
+                "author": "Current User",
+                "text": "test"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "author": "Varsha Rana",
+        "title": "Python",
+        "content": "Day 1",
+        "comments": [
+            {
+                "author": "Current User",
+                "text": "Best"
+            },
+            {
+                "author": "Current User",
+                "text": "Good\r\n"
+            }
+        ],
+        "likes": 3
+    },
+    {
+        "id": 3,
+        "author": "Rana",
+        "title": "Pytest",
+        "content": "Test",
+        "comments": [
+            {
+                "author": "Current User",
+                "text": "SE"
+            }
+        ],
+        "likes": 2
+    }
+]
