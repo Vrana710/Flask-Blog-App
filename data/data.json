@@ -21,7 +21,8 @@
         "author": "Hetal",
         "title": "Python ",
         "content": "Python continues to be a powerhouse in programming, offering simplicity and versatility. Its clean syntax and rich libraries make it ideal for everything from web development to data science. Python's community-driven growth and extensive resources ensure it remains a top choice for both beginners and experts alike. Happy coding!",
-        "comments": []
+        "comments": [],
+        "likes": 1
     },
     {
         "id": 3,
@@ -37,7 +38,7 @@
         "title": "CSS",
         "content": "**Mastering CSS: Tips for Beginners**\r\n\r\nCSS (Cascading Style Sheets) is essential for web design. Start by mastering basic properties like color, font, and layout. Experiment with Flexbox and Grid for responsive designs. Use media queries to ensure your site looks great on all devices. Practice consistently, and soon, you'll create stunning, user-friendly websites!",
         "comments": [],
-        "likes": 1
+        "likes": 2
     },
     {
         "id": 5,
