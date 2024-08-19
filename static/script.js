@@ -17,5 +17,40 @@ $(document).ready(function() {
         }
       });
     });
+    // Handle comment form submission
+    $('.comment-form').on('submit', function(event) {
+        event.preventDefault();
+        
+        const form = $(this);
+        const postId = form.data('post-id');
+        const formData = form.serialize();
+        
+        $.post(`/comment/${postId}`, formData, function(data) {
+          // Clear existing comments
+          const commentsList = $(`#post-${postId} .comments-list`);
+          commentsList.empty();
+          
+          // Append new comments
+          $.each(data.comments, function(index, comment) {
+            commentsList.append(`
+              <div class="comment">
+                <p><strong>${comment.author}:</strong> ${comment.text}</p>
+              </div>
+            `);
+          });
+          
+          // Clear the comment form
+          form[0].reset();
+        });
+      });
+    
+      // Handle delete button click
+      $('.delete-form').on('submit', function(event) {
+        event.preventDefault();
+        
+        if (confirm('Are you sure you want to delete this post?')) {
+          $(this).off('submit').submit();
+        }
+      });
   });
   

@@ -147,7 +147,8 @@ def comment(post_id):
     # Debugging line
     print(f"Updated post {post_id} with new comment: {new_comment}")
 
-    return redirect(url_for('index'))
+    # Return updated comments as JSON
+    return jsonify({'comments': post['comments']})
 
 
 if __name__ == '__main__':

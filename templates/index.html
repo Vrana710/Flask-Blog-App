@@ -6,10 +6,10 @@
     <title>My Flask Blog</title>
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='./style.css') }}"
+      href="{{ url_for('static', filename='style.css') }}"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="{{ url_for('static', filename='./script.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
   </head>
   <body>
     <h1>Welcome to My Flask Blog!</h1>
@@ -21,7 +21,7 @@
         <p><em>Written by {{ post.author }}</em></p>
         <p>{{ post.content }}</p>
         <div class="button-container">
-          <form action="{{ url_for('delete', post_id=post.id) }}" method="POST">
+          <form action="{{ url_for('delete', post_id=post.id) }}" method="POST" class="delete-form">
             <input type="hidden" name="_method" value="DELETE" />
             <button type="submit" class="icon-btn delete-btn" value="Delete">
               <img
@@ -46,22 +46,23 @@
               src="{{ url_for('static', filename='like.svg') }}"
               alt="Like"
             />
-            Like <span class="like-count">{{ post.likes }}</span>
+            <span class="like-count">{{ post.likes }}</span>
           </button>
         </div>
         <!-- Comment Section -->
         <div class="comment-section">
           <h3>Comments:</h3>
-          {% for comment in post.comments %}
-          <div class="comment">
-            <p><strong>{{ comment.author }}:</strong> {{ comment.text }}</p>
+          <div class="comments-list">
+            {% for comment in post.comments %}
+            <div class="comment">
+              <p><strong>{{ comment.author }}:</strong> {{ comment.text }}</p>
+            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
           <!-- Comment Form -->
           <form
-            action="{{ url_for('comment', post_id=post.id) }}"
-            method="POST"
             class="comment-form"
+            data-post-id="{{ post.id }}"
           >
             <input type="text" name="author" placeholder="Your Name" required />
             <textarea

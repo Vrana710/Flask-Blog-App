@@ -44,15 +44,25 @@
         "author": "Rana",
         "title": "JAVA",
         "content": "Java remains a cornerstone in the programming world, known for its versatility and robustness. Its \"write once, run anywhere\" philosophy ensures cross-platform compatibility, making it ideal for diverse applications from web development to mobile apps. With continuous updates and a strong community, Java's relevance endures in modern tech.",
-        "comments": [],
-        "likes": 5
+        "comments": [
+            {
+                "author": "Varsha",
+                "text": "Best"
+            }
+        ],
+        "likes": 6
     },
     {
         "id": 6,
         "author": "Rana",
         "title": "Weather in Germany",
         "content": "Germany experiences a diverse climate, ranging from temperate oceanic in the north to continental in the east. Winters can be cold with snow in many regions, while summers are generally mild to warm. Rainfall is evenly distributed throughout the year, making an umbrella a must for any season.",
-        "comments": [],
-        "likes": 4
+        "comments": [
+            {
+                "author": "Neha",
+                "text": "Nice"
+            }
+        ],
+        "likes": 18
     }
 ]
