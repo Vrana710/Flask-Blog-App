@@ -1,54 +1,58 @@
 [
     {
-        "id": 3,
-        "author": "Rana",
+        "id": 1,
+        "author": "Varsha",
         "title": "Pytest",
-        "content": "Test",
+        "content": "Pytest continues to revolutionize testing in Python with its latest updates! Boasting enhanced fixtures, improved performance, and clearer error reporting, it simplifies writing and maintaining tests. New plugins and better integration with modern tools make it a top choice for developers seeking efficient, reliable testing solutions. Try Pytest today!",
         "comments": [
             {
-                "author": "Current User",
-                "text": "SE"
-            }
-        ],
-        "likes": 9
-    },
-    {
-        "id": 4,
-        "author": "Neha",
-        "title": "ASP:NET",
-        "content": "MVC 5",
-        "comments": [
+                "author": "Varsha",
+                "text": "Good"
+            },
             {
-                "author": "Current User",
-                "text": "test"
+                "author": "Neha",
+                "text": "Good"
             }
         ],
         "likes": 10
     },
     {
-        "id": 5,
+        "id": 2,
         "author": "Hetal",
+        "title": "Python ",
+        "content": "Python continues to be a powerhouse in programming, offering simplicity and versatility. Its clean syntax and rich libraries make it ideal for everything from web development to data science. Python's community-driven growth and extensive resources ensure it remains a top choice for both beginners and experts alike. Happy coding!",
+        "comments": []
+    },
+    {
+        "id": 3,
+        "author": "Neha",
+        "title": "C#",
+        "content": "**Embracing C#**\r\n\r\nC# continues to evolve, bringing powerful features and performance enhancements. The latest updates focus on simplifying syntax and improving developer productivity. With innovations like record types, pattern matching, and improved async support, C# remains a versatile and robust language for modern software development. Dive in to harness its full potential!",
+        "comments": [],
+        "likes": 1
+    },
+    {
+        "id": 4,
+        "author": "Toral",
         "title": "CSS",
-        "content": "CSS3",
-        "comments": [
-            {
-                "author": null,
-                "text": "Good"
-            }
-        ],
-        "likes": 8
+        "content": "**Mastering CSS: Tips for Beginners**\r\n\r\nCSS (Cascading Style Sheets) is essential for web design. Start by mastering basic properties like color, font, and layout. Experiment with Flexbox and Grid for responsive designs. Use media queries to ensure your site looks great on all devices. Practice consistently, and soon, you'll create stunning, user-friendly websites!",
+        "comments": [],
+        "likes": 1
+    },
+    {
+        "id": 5,
+        "author": "Rana",
+        "title": "JAVA",
+        "content": "Java remains a cornerstone in the programming world, known for its versatility and robustness. Its \"write once, run anywhere\" philosophy ensures cross-platform compatibility, making it ideal for diverse applications from web development to mobile apps. With continuous updates and a strong community, Java's relevance endures in modern tech.",
+        "comments": [],
+        "likes": 5
     },
     {
         "id": 6,
-        "author": "Varsha Rana",
-        "title": "C#",
-        "content": "C#",
-        "comments": [
-            {
-                "author": null,
-                "text": "test"
-            }
-        ],
-        "likes": 3
+        "author": "Rana",
+        "title": "Weather in Germany",
+        "content": "Germany experiences a diverse climate, ranging from temperate oceanic in the north to continental in the east. Winters can be cold with snow in many regions, while summers are generally mild to warm. Rainfall is evenly distributed throughout the year, making an umbrella a must for any season.",
+        "comments": [],
+        "likes": 4
     }
 ]

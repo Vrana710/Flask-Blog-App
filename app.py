@@ -109,19 +109,27 @@ def update(post_id):
 
     return render_template('update.html', post=post)
 
+
 @app.route('/comment/<int:post_id>', methods=['POST'])
 def comment(post_id):
     print("Received POST request to add comment to post ID:", post_id)
-    print("Form Data:", request.form)
+    print("Form Data:", request.form)  # Debugging line
+
     blog_posts = load_posts()
     post = fetch_post_by_id(post_id)
 
     if post is None:
         return "Post not found", 404
 
+    author = request.form.get('author')  # Get the author's name from the form
+    comment_text = request.form.get('comment')  # Get the comment text from the form
+
+    if not author or not comment_text:
+        return "Author and comment are required", 400
+
     new_comment = {
-        'author': request.form.get('author'),  # Changed from 'post_id' to 'author'
-        'text': request.form['comment']
+        'author': author,
+        'text': comment_text
     }
 
     if 'comments' not in post:
@@ -140,6 +148,7 @@ def comment(post_id):
     print(f"Updated post {post_id} with new comment: {new_comment}")
 
     return redirect(url_for('index'))
+
 
 if __name__ == '__main__':
     app.run(debug=True)
