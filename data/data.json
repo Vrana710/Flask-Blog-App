@@ -1,43 +1,5 @@
 [
     {
-        "id": 1,
-        "author": "Author Name Varsha",
-        "title": "Post Title Varsha",
-        "content": "New test",
-        "likes": 13,
-        "comments": [
-            {
-                "author": "Current User",
-                "text": "This is a comment"
-            },
-            {
-                "author": "Current User",
-                "text": "Good"
-            },
-            {
-                "author": "Current User",
-                "text": "test"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "author": "Varsha Rana",
-        "title": "Python",
-        "content": "Day 1",
-        "comments": [
-            {
-                "author": "Current User",
-                "text": "Best"
-            },
-            {
-                "author": "Current User",
-                "text": "Good\r\n"
-            }
-        ],
-        "likes": 3
-    },
-    {
         "id": 3,
         "author": "Rana",
         "title": "Pytest",
@@ -48,6 +10,45 @@
                 "text": "SE"
             }
         ],
-        "likes": 2
+        "likes": 9
+    },
+    {
+        "id": 4,
+        "author": "Neha",
+        "title": "ASP:NET",
+        "content": "MVC 5",
+        "comments": [
+            {
+                "author": "Current User",
+                "text": "test"
+            }
+        ],
+        "likes": 10
+    },
+    {
+        "id": 5,
+        "author": "Hetal",
+        "title": "CSS",
+        "content": "CSS3",
+        "comments": [
+            {
+                "author": null,
+                "text": "Good"
+            }
+        ],
+        "likes": 8
+    },
+    {
+        "id": 6,
+        "author": "Varsha Rana",
+        "title": "C#",
+        "content": "C#",
+        "comments": [
+            {
+                "author": null,
+                "text": "test"
+            }
+        ],
+        "likes": 3
     }
 ]

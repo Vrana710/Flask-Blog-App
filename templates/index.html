@@ -8,24 +8,27 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='./style.css') }}"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='./script.js') }}"></script>
   </head>
   <body>
     <h1>Welcome to My Flask Blog!</h1>
     <a href="{{ url_for('add') }}" class="btn btn-primary">Add New Post</a>
     <div class="post-container">
       {% for post in posts %}
-      <div class="post">
+      <div class="post" id="post-{{ post.id }}">
         <h2>{{ post.title }}</h2>
         <p><em>Written by {{ post.author }}</em></p>
         <p>{{ post.content }}</p>
         <div class="button-container">
           <form action="{{ url_for('delete', post_id=post.id) }}" method="POST">
             <input type="hidden" name="_method" value="DELETE" />
-            <button type="submit" class="icon-btn delete-btn">
+            <button type="submit" class="icon-btn delete-btn" value="Delete">
               <img
-                src="{{ url_for('static', filename='./delete-icon.svg') }}"
-                alt="Delete Icon"
+                src="{{ url_for('static', filename='delete-icon.svg') }}"
+                alt="Delete"
               />
+              Delete
             </button>
           </form>
           <a
@@ -33,19 +36,18 @@
             class="icon-btn update-btn"
           >
             <img
-              src="{{ url_for('static', filename='./update-icon.svg') }}"
-              alt="Update Icon"
+              src="{{ url_for('static', filename='update-icon.svg') }}"
+              alt="Update"
             />
+            Update
           </a>
-          <form action="{{ url_for('like', post_id=post.id) }}" method="POST">
-            <button type="submit" class="like-btn btn">
-              <img
-                src="{{ url_for('static', filename='./like.svg') }}"
-                alt="Like Icon"
-              />
-              Like {{ post.likes }}
-            </button>
-          </form>
+          <button class="like-btn btn" data-post-id="{{ post.id }}">
+            <img
+              src="{{ url_for('static', filename='like.svg') }}"
+              alt="Like"
+            />
+            Like <span class="like-count">{{ post.likes }}</span>
+          </button>
         </div>
         <!-- Comment Section -->
         <div class="comment-section">
